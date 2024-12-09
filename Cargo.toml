@@ -6,4 +6,8 @@ edition = "2021"
 [dependencies]
 
 [dev-dependencies]
-criterion = "0.5.1"
+criterion = { version = "0.4", features = ["csv_output"] }
+
+[[bench]]
+name = "cow_vs_string"
+harness = false
